@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/cmain.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="validate.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Rambla" rel="stylesheet">
+    
+    <style type="text/css">
+        
+        h1{
+            text-align: center;
+            font-size: 100px;
+            font-family: 'Rambla', sans-serif;
+            font-family: 'Lobster', cursive; 
+            padding: 12px;
+            font-color:#df4343;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+<div class="container" ng-app="myApp" ng-controller="myCtrl">
+<div class="header"> 
+<h1>river side coffee hut</h1>
+</div>
+<div class="mainbody">
+    <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\iced tea.jpg">
+        <h4 class="cfe">Iced tea:3.19$</h4>
+        <input  class="quant" ng-model="ict" type="number" value="0" min="0" max="10" name="quantity"> 
+    </div>
+    <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\hot chacolate.jpg" >
+        <h4 class="cfe">Hot chacolate:2.89$</h4>
+        <input   class="quant" ng-model="hct" type="number" value="0" min="0" max="10" name="quantity">
+    </div>
+    <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\coffee-love.jpg" >
+        <h4 class="cfe">love coffe:3.89$</h4>
+        <input  class="quant" ng-model="love"  type="number" value="0" min="0" max="10" name="quantity">
+    </div>
+    <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\Best-Starbucks-Drinks.jpg">
+        <h4 class="cfe">French kiss:4.19$ </h4>
+        <input  class="quant"  ng-model="kiss" type="number" value="0" min="0" max="10" name="quantity">
+   </div>
+   <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\starbucks_by_pinkcherry06.jpg"  >
+        <h4 class="cfe">Chistmas cofee:3.99$</h4>
+        <input  class="quant"  ng-model="chris" type="number" value="0" min="0" max="10" name="quantity">
+   </div>
+   <div class="part">
+        <img class="sty" src="C:\Users\jainh\Desktop\coffee shop testing project using angulaJS\img\hima cofee.jpg"  >
+        <h4 class="cfe">ceramic:2.69$</h4>
+        <input class="quant"  ng-model="hima" type="number" value="0" min="0" max="10" name="quantity">
+    </div>
+</div>
+  <div class="footer">
+        <input type="button" name="button" ng-click="finalprice()" value="finalprice" style="width:230px;
+               height: 50px;
+               background-color: #e07e4f;
+               color: white;position: relative;
+               float: right;right:300px;top:10px;border-radius: 8px">
+
+<h3 id="jai" style="position: relative;
+                    float: right;top:5px ">{{result}}</h3>
+<br>
+
+</div>
+
+</div>
+
+</body>
+</html>
